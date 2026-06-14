@@ -5,7 +5,7 @@
 ---
 
 ## 🔗 Live Demo
-## 🌍 [tejjas12.github.io/portfolio](https://tejjas12.github.io/portfolio)
+## 🌍 https://tejjas12.github.io/Portfolio/
 
 ---
 
