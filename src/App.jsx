@@ -330,7 +330,7 @@ useEffect(() => {
     >
       <div className="image-frame">
         <img
-          src={`${import.meta.env.BASE_URL}profile.png`}
+          src="/Portfolio/profile.png"
           alt="Tejas Patil"
           className="profile-image"
         />
