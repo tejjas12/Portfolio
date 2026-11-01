@@ -109,3 +109,44 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+/* Keep portfolio colors consistent in all device themes */
+
+:root {
+  color-scheme: light only;
+  background-color: #f1e9df;
+  color: #171614;
+}
+
+html {
+  color-scheme: light only;
+  background-color: #f1e9df;
+}
+
+body {
+  background-color: #f1e9df !important;
+  color: #171614 !important;
+}
+
+#root {
+  background-color: #f1e9df;
+  color: #171614;
+}
+
+/* FIX HERO TEXT COLORS ON ALL DEVICES */
+
+.hero-heading h1 {
+  color: #171614 !important;
+  -webkit-text-fill-color: #171614 !important;
+}
+
+.hero-heading .outline-text {
+  color: transparent !important;
+  -webkit-text-fill-color: transparent !important;
+  -webkit-text-stroke: 2px #171614 !important;
+}
+
+.hero-heading .accent-dot {
+  color: #b9a88e !important;
+  -webkit-text-fill-color: #b9a88e !important;
+}

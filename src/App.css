@@ -1166,3 +1166,67 @@ html {
 .nav-links a.active::after {
   transform: scaleX(1);
 }
+
+
+/* MOBILE TYPOGRAPHY FIX */
+
+@media screen and (max-width: 768px) {
+  .hero-heading {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .hero-heading h1 {
+    font-size: clamp(3.2rem, 13vw, 5.5rem);
+    line-height: 0.95;
+    letter-spacing: -0.045em;
+    white-space: nowrap;
+    max-width: 100%;
+  }
+
+  .heading-mask {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .outline-text {
+    -webkit-text-stroke: 1px currentColor;
+  }
+
+  .section h2,
+  .about h2,
+  .projects h2,
+  .contact-heading {
+    font-size: clamp(2.5rem, 10vw, 4rem);
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .hero-heading h1 {
+    font-size: 12vw;
+  }
+}
+
+
+/* MOBILE HEADING COLOR FIX */
+
+@media screen and (max-width: 768px) {
+
+  .hero-heading h1:not(.outline-text) {
+    color: #171614 !important;
+  }
+
+  .about h2,
+  .projects h2,
+  .contact-heading {
+    color: #171614 !important;
+  }
+
+  .about h2 *,
+  .projects h2 * {
+    color: inherit !important;
+  }
+
+}
